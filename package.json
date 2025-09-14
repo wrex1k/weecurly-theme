@@ -1,0 +1,37 @@
+{
+  "name": "weecurly-theme",
+  "displayName": ".weeCurly Theme",
+  "publisher": "wrex1k",
+  "description": "Dark emerald × teal color theme for VS Code. Calm background, teal accents, and punchy code colors.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wrex1K/weecurly-theme"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": ".weeCurly Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/weeCurly-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1e1e2e",
+    "theme": "dark"
+  }
+}

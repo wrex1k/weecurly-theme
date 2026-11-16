@@ -3,13 +3,13 @@
   "displayName": ".weeCurly Theme",
   "publisher": "wrex1k",
   "description": "Dark emerald × teal color theme for VS Code. Calm background, teal accents, and punchy code colors.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
-    "vscode": "^1.104.0"
+    "vscode": "^1.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wrex1K/weecurly-theme"
+    "url": "https://github.com/wrex1k/weecurly-theme"
   },
   "categories": [
     "Themes"
@@ -17,9 +17,52 @@
   "contributes": {
     "themes": [
       {
-        "label": ".weeCurly Theme",
+        "label": ".weeCurly punchy",
         "uiTheme": "vs-dark",
-        "path": "./themes/weeCurly-theme.json"
+        "path": "./themes/weeCurly-punchy.json"
+      },
+      {
+        "label": ".weeCurly pastel",
+        "uiTheme": "vs-dark",
+        "path": "./themes/weeCurly-pastel.json"
+      }
+    ],
+    "grammars": [
+      {
+        "scopeName": "comment-tags.injection",
+        "path": "./syntaxes/comment-tags.tmLanguage.json",
+        "injectTo": [
+          "source.python",
+          "source.js",
+          "source.ts",
+          "source.jsx",
+          "source.tsx",
+          "source.java",
+          "source.cpp",
+          "source.c",
+          "source.cs",
+          "source.go",
+          "source.rust",
+          "source.ruby",
+          "source.php",
+          "source.swift",
+          "source.kotlin",
+          "source.shell",
+          "source.powershell",
+          "source.sql",
+          "source.css",
+          "source.scss",
+          "source.yaml",
+          "source.makefile",
+          "source.dockerfile"
+        ]
+      },
+      {
+        "scopeName": "dockerfile-enhanced.injection",
+        "path": "./syntaxes/dockerfile-enhanced.tmLanguage.json",
+        "injectTo": [
+          "source.dockerfile"
+        ]
       }
     ]
   },
@@ -27,11 +70,21 @@
     "package": "vsce package"
   },
   "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
     "vsce": "^2.15.0"
   },
   "icon": "icon.png",
   "galleryBanner": {
     "color": "#1e1e2e",
     "theme": "dark"
+  },
+  "dependencies": {
+    "onigasm": "^2.2.5",
+    "tinycolor2": "^1.6.0",
+    "tm-grammars": "^1.17.28",
+    "vscode-oniguruma": "^2.0.1",
+    "vscode-textmate": "^9.0.0"
   }
 }

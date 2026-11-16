@@ -1,0 +1,118 @@
+# YAML Sample
+# This file demonstrates YAML features including:
+# - YAML syntax and structure
+# - Key-value pairs and nested objects
+# - Arrays and lists
+# - Comments and documentation
+# - YAML indentation and formatting
+# - Complex data structures
+
+name: "WeeCurly Theme"
+version: "1.0.0"
+description: "Dark emerald × teal color theme for VS Code"
+author: "Your Name"
+license: "MIT"
+
+# Theme configuration
+theme:
+  type: "dark"
+  colors:
+    background: "#0F1D1C"
+    foreground: "#d7e0e0"
+    accent: "#28938C"
+    error: "#d76c73"
+    warning: "#ffd866"
+    success: "#a9dc76"
+
+# Language support
+languages:
+  - name: "JavaScript"
+    extensions: [".js", ".jsx"]
+    scope: "source.javascript"
+  - name: "TypeScript"
+    extensions: [".ts", ".tsx"]
+    scope: "source.typescript"
+  - name: "Python"
+    extensions: [".py"]
+    scope: "source.python"
+  - name: "Java"
+    extensions: [".java"]
+    scope: "source.java"
+  - name: "C++"
+    extensions: [".cpp", ".hpp"]
+    scope: "source.cpp"
+  - name: "Go"
+    extensions: [".go"]
+    scope: "source.go"
+  - name: "Rust"
+    extensions: [".rs"]
+    scope: "source.rust"
+  - name: "PHP"
+    extensions: [".php"]
+    scope: "source.php"
+  - name: "Ruby"
+    extensions: [".rb"]
+    scope: "source.ruby"
+  - name: "Swift"
+    extensions: [".swift"]
+    scope: "source.swift"
+  - name: "Kotlin"
+    extensions: [".kt"]
+    scope: "source.kotlin"
+  - name: "SQL"
+    extensions: [".sql"]
+    scope: "source.sql"
+  - name: "Shell"
+    extensions: [".sh", ".bash"]
+    scope: "source.shell"
+  - name: "PowerShell"
+    extensions: [".ps1"]
+    scope: "source.powershell"
+  - name: "HTML"
+    extensions: [".html", ".htm"]
+    scope: "source.html"
+  - name: "CSS"
+    extensions: [".css"]
+    scope: "source.css"
+  - name: "SCSS"
+    extensions: [".scss"]
+    scope: "source.scss"
+  - name: "JSON"
+    extensions: [".json"]
+    scope: "source.json"
+  - name: "YAML"
+    extensions: [".yml", ".yaml"]
+    scope: "source.yaml"
+  - name: "Markdown"
+    extensions: [".md", ".markdown"]
+    scope: "source.markdown"
+  - name: "XML"
+    extensions: [".xml"]
+    scope: "source.xml"
+  - name: "Dockerfile"
+    extensions: ["Dockerfile"]
+    scope: "source.dockerfile"
+  - name: "Makefile"
+    extensions: ["Makefile", "makefile"]
+    scope: "source.makefile"
+
+# Installation instructions
+installation:
+  method1: "Command Palette → Preferences: Color Theme → Import Color Theme"
+  method2: "Install as VSIX extension"
+  method3: "Manual JSON placement in themes folder"
+
+# Features
+features:
+  - "Dark theme with emerald and teal hues"
+  - "Calm background with teal accents"
+  - "Punchy code colors for better readability"
+  - "Support for 20+ programming languages"
+  - "Consistent syntax highlighting"
+  - "Optimized for long coding sessions"
+
+# Tips
+tips:
+  - "Use Developer: Inspect Editor Tokens and Scopes for debugging"
+  - "Customize colors by editing the JSON theme file"
+  - "Report issues with specific scope information"

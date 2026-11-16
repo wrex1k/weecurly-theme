@@ -1,0 +1,83 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "scopeName": "dockerfile-enhanced.injection",
+  "injectionSelector": "L:source.dockerfile -comment -string",
+  "patterns": [
+    {
+      "comment": "Double-ampersand operator (&&)",
+      "name": "keyword.operator.logical.dockerfile",
+      "match": "&&"
+    },
+    {
+      "comment": "Pipe operator (|)",
+      "name": "keyword.operator.pipe.dockerfile",
+      "match": "\\|"
+    },
+    {
+      "comment": "Semicolon operator",
+      "name": "keyword.operator.semicolon.dockerfile",
+      "match": ";"
+    },
+    {
+      "comment": "Line continuation backslash",
+      "name": "punctuation.separator.continuation.dockerfile",
+      "match": "\\\\\\s*$"
+    },
+    {
+      "comment": "Flags like --from=value, --no-dev, --optimize-autoloader",
+      "name": "meta.flag.dockerfile",
+      "match": "(--)(\\w[\\w-]*)(?:(=)(\\S+))?",
+      "captures": {
+        "1": { "name": "punctuation.definition.flag.dockerfile" },
+        "2": { "name": "variable.parameter.flag.dockerfile" },
+        "3": { "name": "keyword.operator.assignment.dockerfile" },
+        "4": { "name": "string.unquoted.flag-value.dockerfile" }
+      }
+    },
+    {
+      "comment": "Environment variable $VAR or ${VAR}",
+      "name": "variable.other.environment.dockerfile",
+      "match": "\\$(?:\\{[\\w]+\\}|[\\w]+)"
+    },
+    {
+      "comment": "Absolute paths like /var/www/html",
+      "match": "(?<=\\s|=|:)(/)([\\w.-]+)(?:(/)([\\w.-]+))?(?:(/)([\\w.-]+))?(?:(/)([\\w.-]+))?(?:(/)([\\w.-]+))?",
+      "captures": {
+        "1": { "name": "punctuation.separator.path.dockerfile.depth1" },
+        "2": { "name": "entity.name.path.segment.dockerfile.depth1" },
+        "3": { "name": "punctuation.separator.path.dockerfile.depth2" },
+        "4": { "name": "entity.name.path.segment.dockerfile.depth2" },
+        "5": { "name": "punctuation.separator.path.dockerfile.depth3" },
+        "6": { "name": "entity.name.path.segment.dockerfile.depth3" },
+        "7": { "name": "punctuation.separator.path.dockerfile.depth4" },
+        "8": { "name": "entity.name.path.segment.dockerfile.depth4" },
+        "9": { "name": "punctuation.separator.path.dockerfile.depth5" },
+        "10": { "name": "entity.name.path.segment.dockerfile.depth5" }
+      }
+    },
+    {
+      "comment": "Relative path ./",
+      "name": "entity.name.path.relative.dockerfile",
+      "match": "\\./"
+    },
+    {
+      "comment": "Image reference like php:8.2-fpm, composer:2",
+      "match": "(?<=FROM\\s|from=)([\\w.-]+)(:)([\\w.-]+)",
+      "captures": {
+        "1": { "name": "entity.name.image.dockerfile" },
+        "2": { "name": "punctuation.separator.tag.dockerfile" },
+        "3": { "name": "constant.other.image-tag.dockerfile" }
+      }
+    },
+    {
+      "comment": "Port numbers (standalone numbers like 9000)",
+      "name": "constant.numeric.port.dockerfile",
+      "match": "(?<=EXPOSE\\s+|\\s)\\d{2,5}(?=\\s|$)"
+    },
+    {
+      "comment": "JSON array brackets in CMD/ENTRYPOINT",
+      "name": "punctuation.definition.array.dockerfile",
+      "match": "[\\[\\]]"
+    }
+  ]
+}

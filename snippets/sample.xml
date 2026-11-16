@@ -1,0 +1,22 @@
+<!-- XML Sample
+This file demonstrates XML features including:
+- XML syntax and structure
+- XML elements and attributes
+- XML namespaces and schemas
+- XML validation and parsing
+- XML transformations (XSLT)
+- XML best practices
+-->
+
+<!-- Example XML -->
+<note>
+  <to>User</to>
+  <from>System</from>
+  <heading>Reminder</heading>
+  <body>Hello XML</body>
+</note>
+
+<items>
+  <item id="1">Apple</item>
+  <item id="2">Banana</item>
+</items>

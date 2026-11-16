@@ -1,0 +1,30 @@
+
+TESTOVAT S F5
+
+1. lepsia podpora doterajsich jazykov 
+
+- naposledy som robil dockefile overit prikazom
+
+potom nainstlaovat vsix
+
+2. upravit readme aby sedelo //tsx //dart //gradle //lock //yaml //manifest
+
+2,5. pridat fotky do readme <3
+
+3. commit 
+
+"
+	upravene farbe pre konzistenciu
+	podpora jazykov ako ....
+	uprava readme
+	pridany pastel model
+	klasicky premenovany na punchy
+"
+
+4. push
+
+BUDUCNOST:
+
+better comments impelemtn
+
+lepsia podpora v buducnosti viacerých jazykov

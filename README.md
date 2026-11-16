@@ -12,12 +12,14 @@ Dark emerald × teal color theme for VS Code. Calm background, teal accents, and
 2) Pick “.weeCurly Theme” in Color Theme
 
 ### Language support
-JS/TS/React, HTML/CSS/SCSS, JSON, YAML, Markdown, Python, Java, C/C++/C#, Go, Rust, PHP, Ruby, Swift, Kotlin, SQL, Shell/PowerShell, TOML, XML, Dockerfile, Makefile, and more.
+JS/TS/React, HTML/CSS/SCSS, JSONC, YAML, Markdown, Python, Java, C/C++/C#, Go, Rust, PHP, Ruby, Swift, Kotlin, SQL, Shell/PowerShell, TOML, XML, Dockerfile, Makefile, and more.
 
 Optional (as an extension):  
 - Place the JSON at `themes/.weeCurly-theme.json` inside a VS Code extension scaffold and install as a VSIX.  
 
 ## Tips
-If something in the UI looks off, use **Developer: Inspect Editor Tokens and Scopes** and share the scope—it can be mapped quickly.
+If something in the UI looks off, use **Developer: Inspect Editor Tokens and Scopes** and share the scope, so it can be fixed quickly!
 
 **Enjoy!**
+
+Make with a <3 

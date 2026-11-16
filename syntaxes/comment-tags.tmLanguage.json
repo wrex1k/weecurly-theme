@@ -1,0 +1,79 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "scopeName": "comment-tags.injection",
+  "injectionSelector": "L:source -string -comment",
+  "patterns": [
+    {
+      "name": "comment.line.tag.question",
+      "match": "(#|//)(\\?)(\\s.*)$",
+      "captures": {
+        "1": { "name": "punctuation.definition.comment.tag.question" },
+        "2": { "name": "punctuation.tag.question" },
+        "3": { "name": "comment.tag.question.text" }
+      }
+    },
+    {
+      "name": "comment.line.tag.alert",
+      "match": "(#|//)(!)( .*)$",
+      "captures": {
+        "1": { "name": "punctuation.definition.comment.tag.alert" },
+        "2": { "name": "punctuation.tag.alert" },
+        "3": { "name": "comment.tag.alert.text" }
+      }
+    },
+    {
+      "name": "comment.line.tag.info",
+      "match": "(#|//)(\\.)(\\s.*)$",
+      "captures": {
+        "1": { "name": "punctuation.definition.comment.tag.info" },
+        "2": { "name": "punctuation.tag.info" },
+        "3": { "name": "comment.tag.info.text" }
+      }
+    },
+    {
+      "name": "comment.line.tag.highlight",
+      "match": "(#|//)(\\*)(\\s.*)$",
+      "captures": {
+        "1": { "name": "punctuation.definition.comment.tag.highlight" },
+        "2": { "name": "punctuation.tag.highlight" },
+        "3": { "name": "comment.tag.highlight.text" }
+      }
+    },
+    {
+      "name": "comment.line.tag.reference",
+      "match": "(#|//)(\\])(\\s.*)$",
+      "captures": {
+        "1": { "name": "punctuation.definition.comment.tag.reference" },
+        "2": { "name": "punctuation.tag.reference" },
+        "3": { "name": "comment.tag.reference.text" }
+      }
+    },
+    {
+      "name": "comment.line.tag.quote",
+      "match": "(#|//)(>)(\\s.*)$",
+      "captures": {
+        "1": { "name": "punctuation.definition.comment.tag.quote" },
+        "2": { "name": "punctuation.tag.quote" },
+        "3": { "name": "comment.tag.quote.text" }
+      }
+    },
+    {
+      "name": "comment.line.tag.coderef",
+      "match": "(#|//)(})(\\s.*)$",
+      "captures": {
+        "1": { "name": "punctuation.definition.comment.tag.coderef" },
+        "2": { "name": "punctuation.tag.coderef" },
+        "3": { "name": "comment.tag.coderef.text" }
+      }
+    },
+    {
+      "name": "comment.line.tag.deprecated",
+      "match": "(#|//)(-)( .*)$",
+      "captures": {
+        "1": { "name": "punctuation.definition.comment.tag.deprecated" },
+        "2": { "name": "punctuation.tag.deprecated" },
+        "3": { "name": "comment.tag.deprecated.text" }
+      }
+    }
+  ]
+}
